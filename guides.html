@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style/guides.css">
+    <link rel="shortcut icon" href="./img/background/logo.png" type="image/x-icon">
+    <title>Phoenix | Guides </title>
+</head>
+<body>
+    <div><img class="index" src="./img/background/home.png" onclick="window.location.href = './index.html';" style="cursor: pointer;"></div>
+    <div class="container0">
+        <div class="box1 box-2" style="--img: url(../img/guides/routine.png);" data-text="Routine" id="routineLink"></div>
+        <div class="box1 box-3" style="--img: url(../img/guides/mapinteractif.png);" data-text="Map Interactif" id="mapinteractifLink"></div>
+        <div class="box1 box-4" style="--img: url(../img/guides/cadeaux.jpg);" data-text="Cadeaux" id="cadeauxLink"></div>
+    </div>
+    <div class="container0">
+        <div class="box1 box-2" style="--img: url(../img/guides/stuff.png);" data-text="Equipement" id="stuffLink"></div>
+        <div class="box1 box-3" style="--img: url(../img/guides/housing.png);" data-text="Housing" id="housingLink"></div>
+        <div class="box1 box-4" style="--img: url(../img/guides/fishing.png);" data-text="Fishing" id="fishingLink"></div>
+    </div>
+    <div>
+        <p class="phoenix2023"> Phoenix © 2023 </p>
+    </div>
+
+    <script>    
+        document.getElementById('routineLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = './guides/routine.html';
+        });
+        document.getElementById('mapinteractifLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = './guides/mapinteractif.html';
+        });
+        document.getElementById('cadeauxLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = './guides/cadeaux.html';
+        });
+        document.getElementById('stuffLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = './guides/stuff.html';
+        });
+        document.getElementById('housingLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = './guides/housing.html';
+        });
+        document.getElementById('fishingLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = './guides/fishing.html';
+        });
+    </script>
+    <script src="./script/javascript.js"></script>
+
+</body>
+</html>

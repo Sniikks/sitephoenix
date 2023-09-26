@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	font-family: "Figtree", sans-serif;
+}
+
+body {
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	background-image: url('../img/background/fond.jpg');
+}
+
+/* Permet aux liens hypertextes d'être en orange. */
+a {
+	color: #f37d15;
+}
+
+/* BOUTON HOME */
+
+.index {
+    max-width: 5%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintient le rapport hauteur/largeur de l'image */
+	display: block; /* Transforme l'image en un élément de bloc */
+    margin: 0 auto; /* Centre l'image horizontalement dans le lien */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.guide {
+    max-width: 5%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintient le rapport hauteur/largeur de l'image */
+	display: block; /* Transforme l'image en un élément de bloc */
+    margin: 0 auto; /* Centre l'image horizontalement dans le lien */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+/*  */
+
+.phoenix2023_1 {
+    font-size: 18px;
+    color: #f37d15;
+    font-family: False;
+    text-align: center; /* Centre le texte horizontalement */
+	margin: 2%;
+}
+
+.boxtext0 {
+	font-size: 25px;
+	color: #f37d15;
+	text-align: center;
+	margin: 2%;
+	font-family: "Figtree", sans-serif;
+}
+
+.boxtext1 {
+	font-size: 18px;
+	color: white;
+	text-align: left;
+	font-family: "Figtree", sans-serif;
+	margin-left: 3%;
+}
+
+.containermaj {
+    background-color: #000000;
+    width: 1000px;
+    height: 200px; /* Ajustez la hauteur selon vos besoins */
+	margin-top: 5%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Pour centrer horizontalement */
+}
+
+.separateurmaj {
+    position: absolute;
+    height: 30%;
+	justify-content: center;
+	align-items: center;
+	border-left: 3px solid #f37d15;
+	margin-left: 1%;
+}
+

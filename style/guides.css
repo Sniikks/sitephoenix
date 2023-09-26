@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	font-family: "Figtree", sans-serif;
+}
+
+body {
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	background-image: url('../img/background/fond.jpg');
+}
+
+/* BOUTON HOME */
+
+.index {
+    max-width: 5%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintient le rapport hauteur/largeur de l'image */
+	display: block; /* Transforme l'image en un élément de bloc */
+    margin: 0 auto; /* Centre l'image horizontalement dans le lien */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.guide {
+    max-width: 5%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintient le rapport hauteur/largeur de l'image */
+	display: block; /* Transforme l'image en un élément de bloc */
+    margin: 0 auto; /* Centre l'image horizontalement dans le lien */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+/******** ********/
+
+/* Permet aux liens hypertextes d'être en orange. */
+a {
+	color: #f37d15;
+}
+
+/******************** GUIDES.HTML **************************/
+
+.container0 {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1em;
+	width: 800px;
+	height: 500px;
+	transition: all 400ms;
+	margin-top: 20%;
+}
+
+.container1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin: 10%;
+}
+
+.container0:hover .box {
+	filter: grayscale(100%) opacity(24%);
+}
+
+
+.container0:hover .box1 {
+	filter: grayscale(100%) opacity(24%);
+}
+
+.box1 {
+	position: relative;
+	background: var(--img) center center;
+	background-size: cover;
+	transition: all 400ms;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container .box1:hover {
+	filter: grayscale(0%) opacity(100%);
+}
+
+.container0 .box:hover {
+	filter: grayscale(0%) opacity(100%);
+}
+
+.container0 .box1:hover {
+	filter: grayscale(0%) opacity(100%);
+}
+
+.container0:has(.box-2:hover) {
+	grid-template-columns: 3fr 1fr 1fr;
+}
+
+.container0:has(.box-3:hover) {
+	grid-template-columns: 1fr 3fr 1fr;
+}
+
+.container0:has(.box-4:hover) {
+	grid-template-columns: 1fr 1fr 3fr;
+}
+
+.box1:nth-child(odd) {
+	transform: translateY(-16px);
+}
+
+.box1:nth-child(even) {
+	transform: translateY(16px);
+}
+
+.box1::after {
+	content: attr(data-text);
+	position: absolute;
+	bottom: 20px;
+	background: #000;
+	color: #fff;
+	padding: 10px 10px 10px 14px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	transform: translateY(60px);
+	opacity: 0;
+	transition: all 400ms;
+}
+
+.box1:hover::after {
+	transform: translateY(0);
+	opacity: 1;
+	transition-delay: 400ms;
+}
+
+.phoenix2023 {
+	font-size: 25px;
+	color: #f37d15;
+	text-align: center;
+	font-family: False;
+	margin: 10%;
+}

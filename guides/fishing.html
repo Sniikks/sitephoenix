@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./fishing.css">
+    <link rel="shortcut icon" href="../img/background/logo.png" type="image/x-icon">
+    <title>Phoenix | Guides - Housing </title>   
+</head>
+<body>
+    <div>
+        <img class="guide" src="../img/background/home.png" onclick="window.location.href = '../guides.html';" style="cursor: pointer;">
+    </div>
+    <div class="containerfishing">        
+        <div class="boxtext0" p> </p><b> Guide </b></div>
+        <div class="separateurfishing"></div>
+    <div class="boxtextfishing1">  
+        <div class="boxtextclassique" p> Pour pratiquer la pêche, il vous faudra aller dans: Echap > Informel > Pêche.</p></div>
+        <img class="imagefishing1" src="../img/fishing/fishing1.png">
+    </div>
+    <div class="boxtextfishing1">
+        <div class="boxtextclassique" p> Il vous faudra avant tout, une canne à pêche mais aussi des appâts. </p></div>  
+        <div class="boxtextclassique" p> Pour le début, il vous faut donc:  </p></div>
+        <div class="boxtextclassique" p> • La canne: Pas de chance </p></div>
+        <div class="boxtextclassique" p> • Les appâts: Appât grossier </p></div>
+    <img class="imagefishing1" src="../img/fishing/fishing2.png">
+    <img class="imagefishing1" src="../img/fishing/fishing3.png">
+    <div class="boxtextclassique" p> Il ne faudra pas oublier d'équiper la canne et les appâts via le menu équiper. </p></div>
+    <img class="imagefishing1" src="../img/fishing/fishing4.png">
+    <div class="boxtextclassique" p>Avant de pêcher il vous faudra faire une petite vérification des poissons, afin de savoir ce qui est le plus rentable à farm selon le prix et la rareté du poisson, et voir si un banc de poisson est disponible. </p></div>
+    <div class="boxtextclassique" p> Une fois cela fait, vous êtes enfin prêt à partir à la pêche.</p></div>
+    <img class="imagefishing1" src="../img/fishing/fishing5.png">
+    </div>
+    <div class="boxtextfishing1">
+        <div class="boxtextclassique" p> Ici nous avons farm l'anchois, car c'est un poisson violet et celui-ci est chère. </p></div>  
+        <div class="boxtextclassique" p> Voici la liste des poissons et la rareté: </p></div>
+        <img class="imagefishing1" src="../img/fishing/fishing6.png">
+        <div class="boxtextclassique" p> Du coup vu que nous avons notre poisson à farm, je regarde donc sur la map ou est mon poisson. </p></div>
+        <img class="imagefishing1" src="../img/fishing/fishing7.png">
+        <div class="boxtextclassique" p> Je me rends donc sur place, et je me positionne face au banc de pêche. </p></div>
+        <div class="boxtextclassique" p> A savoir que si vous disposez de 2 collègues, et de l'éveil de Meryl vous pouvez faire la technique suivante pour facilité la pêche. </p></div>
+        <img class="imagefishing1" src="../img/fishing/fishing8.png">
+    </div>
+    <div class="boxtextfishing1">
+        <div class="boxtextclassique" p> Pour pêcher, il n'y a plus qu'à cliquer sur le logo: canne à pêche </p></div>  
+        <img class="imagefishing1" src="../img/fishing/fishing9.png">
+        <div class="boxtextclassique" p> Une fois que le poisson aura mordu à l'hameçon, il faudra que fassiez en sorte d'avoir la barre rouge du milieu dans le rectangle orange.  </p></div>
+        <div class="boxtextclassique" p> Il faudra que l'endurance du poisson soit à 0 pour que vous puisez le faire remonter, sans que votre fil de pêche ne casse avant. </p></div>
+        <div class="boxtextclassique" p> A savoir que si vous avez une meilleure canne à pêche, votre fil de pêche sera plus résistant. Mais il faut savoir qu'en fonction de la rareté mais aussi du poisson, celui-ci sera plus endurant. </p></div>
+        <img class="imagefishing1" src="../img/fishing/fishing10.png">
+    </div>
+    <div class="boxtextfishing1">
+        <div class="boxtextclassique" p> Il faudra aussi adapter l'appât en fonction du poisson, une fois que vous aurez plus de pièce. Plus l'appât est meilleur, plus le poisson le sera (il y'a aussi le facteur chance à prendre en compte) </p></div>  
+        <div class="boxtextclassique" p> A savoir que vous avez 350 appâts maximum par semaine à acheter. Il faut donc penser à acheter les appâts même si vous n'avez pas l'intention de faire de la pêche pour le moment/si vous n'avez pas le temps. </p></div>
+        <div class="boxtextclassique" p> N'oubliez pas de vendre vos poissons car il y'a un système de péremption qui influencera le montant de la vente du poisson. </p></div>
+        <img class="imagefishing1" src="../img/fishing/fishing11.png">
+        <div class="boxtextclassique" p> Chaque semaine vous pouvez acquérir une matrice, il vous faudra 150 000 pièces (mais il faudra atteindre le niv 9 au préalable). </p></div>
+        <img class="imagefishing1" src="../img/fishing/fishing12.png">
+    </div>
+    <div><p class="phoenix2023_1 "> Phoenix © 2023 </p></div>
+    </div>
+
+    <script>
+        // Fonction pour afficher l'image agrandie
+        function agrandirImage(imageSrc) {
+            var overlay = document.createElement('div');
+            overlay.className = 'overlay';
+            overlay.onclick = function () {
+                overlay.remove();
+            };
+    
+            var image = document.createElement('img');
+            image.className = 'image-agrandie';
+            image.src = imageSrc.replace('.png', '_large.png');
+    
+            overlay.appendChild(image);
+            document.body.appendChild(overlay);
+        }
+    
+        // Ajoutez un gestionnaire d'événements aux images avec la classe "photoequipe"
+        var images = document.querySelectorAll('.imagefishing1');
+        images.forEach(function (image) {
+            image.addEventListener('click', function () {
+                agrandirImage(image.src);
+            });
+        });    
+    </script>
+</body>
+</html>

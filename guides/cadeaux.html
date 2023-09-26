@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./cadeaux.css">
+    <link rel="shortcut icon" href="../img/background/logo.png" type="image/x-icon">
+    <title>Phoenix | MAJS </title>   
+</head>
+<body>
+    <div>
+        <img class="guide" src="../img/background/home.png" onclick="window.location.href = '../guides.html';" style="cursor: pointer;">
+    </div>
+    <div class="containercadeaux">        
+        <div class="boxtext0" p> </p><b> VOICI LA LISTE DES CADEAUX </b></div>
+        <div class="boxtextentente"><p> Mis à jour: 20/09/2023 </p></div>
+        <div class="separateurcadeaux"></div>
+    <div class="containercadeaux1">  
+        <div class="boxtextcadeaux" p> <b><u> • TOFBRVIP: </u></b> 1 nucléus d'or, 50 DC, 5 boites de perfectionnements. </p></div>  
+        <img class="photocadeaux" src="../img/cadeaux/TOFBRVIP.png">
+    </div>
+    <div><p class="phoenix2023_1 "> Phoenix © 2023 </p></div>
+    </div>
+
+    <script>
+        // Fonction pour afficher l'image agrandie
+        function agrandirImage(imageSrc) {
+            var overlay = document.createElement('div');
+            overlay.className = 'overlay';
+            overlay.onclick = function () {
+                overlay.remove();
+            };
+    
+            var image = document.createElement('img');
+            image.className = 'image-agrandie';
+            image.src = imageSrc.replace('.png', '_large.png');
+    
+            overlay.appendChild(image);
+            document.body.appendChild(overlay);
+        }
+    
+        // Ajoute un gestionnaire d'événements aux images avec la classe "photoequipe"
+        var images = document.querySelectorAll('.photocadeaux');
+        images.forEach(function (image) {
+            image.addEventListener('click', function () {
+                agrandirImage(image.src);
+            });
+        });    
+    </script>
+</body>
+</html>
+
+

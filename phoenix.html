@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style/phoenix.css">
+    <link rel="shortcut icon" href="./img/background/logo.png" type="image/x-icon">
+    <title>Phoenix | Phoenix</title>
+</head>
+<body>
+    <div>
+        <img class="guide" src="./img/background/home.png" onclick="window.location.href = './index.html';" style="cursor: pointer;">
+    </div>
+    <div class="containerphoenix">        
+        <div class="boxtext0">
+            <b>VOICI LES PHOTOS/DESSINS DE L'ÉQUIPE</b>
+        </div>
+        <div class="boxtextentente">
+            <p>Vous pouvez faire un clic droit sur l'image, puis ouvrir l'image pour l'agrandir.</p>
+        </div>
+        <div class="separateurcadeaux"></div>
+        <div class="boxtextentente1">
+            <p><b>Photo prise en jeu:</b></p>
+            <div class="containerphoenix1">  
+                <img class="photoequipe" src="./img/photosequipe/photoequipe1.png">
+                <img class="photoequipe" src="./img/photosequipe/photoequipe2.png">
+                <img class="photoequipe" src="./img/photosequipe/photoequipe3.png">
+                <div class="containerphoenix1">  
+                    <img class="photoequipe" src="./img/photosequipe/photoequipe4.png">
+                    <img class="photoequipe" src="./img/photosequipe/photoequipe5.png">
+                    <img class="photoequipe" src="./img/photosequipe/photoequipe6.png"> 
+                    <div class="containerphoenix1">   
+                        <img class="photoequipe" src="./img/photosequipe/photoequipe7.png">
+                        <img class="photoequipe" src="./img/photosequipe/photoequipe8.png">
+                        <img class="photoequipe" src="./img/photosequipe/photoequipe9.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxtextentente2"><b>Dessin:</b>
+                <p><b>Réalisation des magnifiques dessins</b></p>
+                <a href="https://www.instagram.com/m.mblue/">Poulpy</a>
+                <div class="containerphoenix2"> 
+                    <img class="photoequipe1" src="./img/photosequipe/poulpyblue1.jpg">
+                    <img class="photoequipe1" src="./img/photosequipe/poulpyblue2.jpg">
+                    <img class="photoequipe1" src="./img/photosequipe/poulpyblue1.jpg">
+                    <div class="containerphoenix2"> 
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Fonction pour afficher l'image agrandie
+            function agrandirImage(imageSrc) {
+                var overlay = document.createElement('div');
+                overlay.className = 'overlay';
+                overlay.onclick = function () {
+                    overlay.remove();
+                };
+        
+                var image = document.createElement('img');
+                image.className = 'image-agrandie';
+                image.src = imageSrc.replace('.png', '_large.png');
+        
+                overlay.appendChild(image);
+                document.body.appendChild(overlay);
+            }
+        
+            // Ajoute un gestionnaire d'événements aux images avec la classe "photoequipe"
+            var images = document.querySelectorAll('.photoequipe, .photoequipe1');
+            images.forEach(function (image) {
+                image.addEventListener('click', function () {
+                    agrandirImage(image.src);
+                });
+            });    
+        </script>
+    </body>
+</html>

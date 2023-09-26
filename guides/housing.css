@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	font-family: "Figtree", sans-serif;
+}
+
+body {
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	background-image: url('../img/background/fond.jpg');
+}
+
+/* BOUTON HOME */
+
+.index {
+    max-width: 5%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintient le rapport hauteur/largeur de l'image */
+	display: block; /* Transforme l'image en un élément de bloc */
+    margin: 0 auto; /* Centre l'image horizontalement dans le lien */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.guide {
+    max-width: 5%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintient le rapport hauteur/largeur de l'image */
+	display: block; /* Transforme l'image en un élément de bloc */
+    margin: 0 auto; /* Centre l'image horizontalement dans le lien */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+/******** ********/
+
+/* Permet aux liens hypertextes d'être en orange. */
+a {
+	color: #f37d15;
+}
+
+/******** ********/
+
+/* Le conteneur en haut de la page */
+.containerhousing {
+    background-color: #000000;
+    width: 1000px;
+    height: 2600px; /* Ajustez la hauteur selon vos besoins */
+	margin-top: 5%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: 
+	translateX(-50%); /* Pour centrer horizontalement */
+}
+
+/* Barre orange à gauche */
+.separateurhousing {
+    position: absolute;
+    height: 95%;
+	border-left: 3px solid #f37d15;
+	margin-left: 1%;
+}
+
+/* Le titre de la page */
+.boxtext0 {
+	font-size: 25px;
+	color: #f37d15;
+	text-align: center;
+	margin: 2%;
+	font-family: "Figtree", sans-serif;
+}
+
+/* Contenaire */
+.boxtexthousing1 {
+	font-size: 25px;
+	color: white;
+	text-align: left;
+	font-family: "Figtree", sans-serif;
+	margin-left: 3%;
+}
+
+/* Phrase en dessous des maps  */
+.boxtextclassique {
+	font-size: 18px;
+	color: white;
+	text-align: left;
+	font-family: "Figtree", sans-serif;
+}
+
+.imagehousing1 {
+	margin-right: auto;
+
+}
+
+/* Permet d'afficher Phoenix dans les guides + maj */
+.phoenix2023_1 {
+    font-size: 18px;
+    color: #f37d15;
+    font-family: False;
+    text-align: center; /* Centre le texte horizontalement */
+	margin: 2%;
+}
+
+/******** AFFICHAGE IMAGE EN GROS PLAN ********/
+
+/* Style superposition d'image agrandie */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Mettez une valeur élevée pour afficher en premier plan */
+}
+
+/* Taille image agrandie */
+.image-agrandie {
+    max-width: 90%;
+    max-height: 90%;
+}

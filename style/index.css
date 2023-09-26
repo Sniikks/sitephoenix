@@ -1,0 +1,197 @@
+* {
+	margin: 0;
+	font-family: "Figtree", sans-serif;
+}
+
+body {
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	background-image: url('../img/background/fond.jpg');
+}
+
+.phoenix2023 {
+	font-size: 25px;
+	color: #f37d15;
+	text-align: center;
+	font-family: False;
+	margin: 10%;
+}
+
+/* Permet aux liens hypertextes d'être en orange. */
+a {
+	color: #f37d15;
+}
+
+/* BOUTON HOME */
+
+.index {
+    max-width: 5%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintient le rapport hauteur/largeur de l'image */
+	display: block; /* Transforme l'image en un élément de bloc */
+    margin: 0 auto; /* Centre l'image horizontalement dans le lien */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.guide {
+    max-width: 5%; /* Assure que l'image ne dépasse pas la largeur du conteneur */
+    height: auto; /* Maintient le rapport hauteur/largeur de l'image */
+	display: block; /* Transforme l'image en un élément de bloc */
+    margin: 0 auto; /* Centre l'image horizontalement dans le lien */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.boxtext0 {
+	font-size: 25px;
+	color: #f37d15;
+	text-align: center;
+	margin: 2%;
+	font-family: "Figtree", sans-serif;
+}
+
+.boxtext1 {
+	font-size: 18px;
+	color: white;
+	text-align: left;
+	font-family: "Figtree", sans-serif;
+	margin-left: 3%;
+}
+
+.boxtext2 {
+	font-size: 18px;
+	color: white;
+	text-align: left;
+	margin-left: 3%;
+	margin-top: 3%;
+	margin-right: 2%;
+}
+
+.boxtext3 {
+	font-size: 18px;
+	color: white;
+	text-align: left;
+	margin-left: 3%;
+	margin-right: 2%;
+}
+
+.boxtextentente {
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center; /* Centre le texte horizontalement */
+}
+
+.boxtextentente1 {
+	font-size: 24px;
+	color:  #f37d15;
+	text-align: center; /* Centre le texte horizontalement */
+	margin-top: 5%;
+}
+
+.boxtextentente2 {
+	font-size: 24px;
+	color:  #f37d15;
+	text-align: center; /* Centre le texte horizontalement */
+	margin-top: 50%;
+}
+
+
+/******************** INDEX.HTML **************************/
+
+.container {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 1em;
+	width: 800px;
+	height: 500px;
+	transition: all 400ms;
+	margin-top: 2%;
+}
+
+.container:hover .box {
+	filter: grayscale(100%) opacity(24%);
+}
+
+.box {
+	position: relative;
+	background: var(--img) center center;
+	background-size: cover;
+	transition: all 400ms;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container:hover .box1 {
+	filter: grayscale(100%) opacity(24%);
+}
+
+.container .box:hover {
+	filter: grayscale(0%) opacity(100%);
+}
+
+.container .box1:hover {
+	filter: grayscale(0%) opacity(100%);
+}
+
+.container:has(.box-1:hover) {
+	grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+
+.container:has(.box-2:hover) {
+	grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+
+.container:has(.box-3:hover) {
+	grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+}
+
+.container:has(.box-4:hover) {
+	grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+}
+
+.container:has(.box-5:hover) {
+	grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+}
+
+.box:nth-child(odd) {
+	transform: translateY(-16px);
+}
+
+.box:nth-child(even) {
+	transform: translateY(16px);
+}
+
+.box1:nth-child(odd) {
+	transform: translateY(-16px);
+}
+
+.box1:nth-child(even) {
+	transform: translateY(16px);
+}
+
+.box::after {
+	content: attr(data-text);
+	position: absolute;
+	bottom: 20px;
+	background: #000;
+	color: #fff;
+	padding: 10px 10px 10px 14px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	transform: translateY(60px);
+	opacity: 0;
+	transition: all 400ms;
+}
+
+.box:hover::after {
+	transform: translateY(0);
+	opacity: 1;
+	transition-delay: 400ms;
+}
+
+/* */
