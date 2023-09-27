@@ -57,7 +57,7 @@ a {
 /* Barre orange à gauche */
 .separateurstuff {
     position: absolute;
-    height: 95%;
+    height: 98%;
 	border-left: 3px solid #f37d15;
 	margin-left: 1%;
 }
