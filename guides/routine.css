@@ -45,7 +45,7 @@ a {
 .containerroutine {
     background-color: #000000;
     width: 1000px;
-    height: 1600px; /* Ajustez la hauteur selon vos besoins */
+    height: 3600px; /* Ajustez la hauteur selon vos besoins */
 	margin-top: 5%;
     position: absolute;
     top: 0;
@@ -65,7 +65,7 @@ a {
 /* Barre à gauche orange */
 .separateurroutine {
     position: absolute;
-    height: 70%;
+    height: 100%;
 	justify-content: center;
 	align-items: center;
 	border-left: 3px solid #f37d15;
