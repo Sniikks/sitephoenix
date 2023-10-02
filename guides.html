@@ -18,6 +18,11 @@
         <div class="box1 box-3" style="--img: url(../img/guides/housing.png);" data-text="Housing" id="housingLink"></div>
         <div class="box1 box-4" style="--img: url(../img/guides/fishing.png);" data-text="Fishing" id="fishingLink"></div>
     </div>
+    <div class="container0">
+        <div class="box1 box-2" style="--img: url(../img/guides/bazar.png);" data-text="Bazar" id="bazarLink"></div>
+        <div class="box1 box-3" style="--img: url(../img/guides/bazar.png);" data-text="Stuff" id="bazarLink"></div>
+        <div class="box1 box-4" style="--img: url(../img/guides/bazar.png);" data-text="Stuff" id="bazarLink"></div>
+    </div>
     <div>
         <p class="phoenix2023"> Phoenix © 2023 </p>
     </div>
@@ -46,6 +51,10 @@
         document.getElementById('fishingLink').addEventListener('click', function(event) {
             event.preventDefault();
             window.location.href = './guides/fishing.html';
+        });
+        document.getElementById('bazarLink').addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = './guides/bazar.html';
         });
     </script>
     <script src="./script/javascript.js"></script>
