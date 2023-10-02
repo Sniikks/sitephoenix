@@ -46,7 +46,7 @@ a {
 .containerbazar {
     background-color: #000000;
     width: 1000px;
-    height: 6000px; /* Ajustez la hauteur selon vos besoins */
+    height: 7040px; /* Ajustez la hauteur selon vos besoins */
 	margin-top: 5%;
     position: absolute;
     top: 0;
@@ -58,7 +58,7 @@ a {
 /* Barre orange à gauche */
 .separateurbazar {
     position: absolute;
-    height: 96%;
+    height: 98%;
 	border-left: 3px solid #f37d15;
 	margin-left: 1%;
 }
