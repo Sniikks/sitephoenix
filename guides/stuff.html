@@ -187,34 +187,12 @@
             <img class="imagestuff1" src="../img/stuff/stuff20.png">
             <div class="boxtextclassique" p>  </p></div>
             <div class="boxtextclassique" p>  </p></div>
+            <footer>
+                <p id="copyright"></p>
+            </footer>
         </div>
-        <div><p class="phoenix2023_1 "> Phoenix © 2023 </p></div>
-    </div>
 
-    <script>
-        // Fonction pour afficher l'image agrandie
-        function agrandirImage(imageSrc) {
-            var overlay = document.createElement('div');
-            overlay.className = 'overlay';
-            overlay.onclick = function () {
-                overlay.remove();
-            };
-    
-            var image = document.createElement('img');
-            image.className = 'image-agrandie';
-            image.src = imageSrc.replace('.png', '_large.png');
-    
-            overlay.appendChild(image);
-            document.body.appendChild(overlay);
-        }
-    
-        // Ajoutez un gestionnaire d'événements aux images avec la classe "photoequipe"
-        var images = document.querySelectorAll('.imagestuff1');
-        images.forEach(function (image) {
-            image.addEventListener('click', function () {
-                agrandirImage(image.src);
-            });
-        });    
-    </script>
+    <script src="../script/javascript.js"></script>
+
 </body>
 </html>

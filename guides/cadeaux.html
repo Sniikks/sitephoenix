@@ -18,34 +18,12 @@
         <div class="boxtextcadeaux" p> <b><u> • TOFBRVIP: </u></b> 1 nucléus d'or, 50 DC, 5 boites de perfectionnements. </p></div>  
         <img class="photocadeaux" src="../img/cadeaux/TOFBRVIP.png">
     </div>
-    <div><p class="phoenix2023_1 "> Phoenix © 2023 </p></div>
-    </div>
+    <footer>
+        <p id="copyright"></p>
+    </footer>
 
-    <script>
-        // Fonction pour afficher l'image agrandie
-        function agrandirImage(imageSrc) {
-            var overlay = document.createElement('div');
-            overlay.className = 'overlay';
-            overlay.onclick = function () {
-                overlay.remove();
-            };
+    <script src="../script/javascript.js"></script>
     
-            var image = document.createElement('img');
-            image.className = 'image-agrandie';
-            image.src = imageSrc.replace('.png', '_large.png');
-    
-            overlay.appendChild(image);
-            document.body.appendChild(overlay);
-        }
-    
-        // Ajoute un gestionnaire d'événements aux images avec la classe "photoequipe"
-        var images = document.querySelectorAll('.photocadeaux');
-        images.forEach(function (image) {
-            image.addEventListener('click', function () {
-                agrandirImage(image.src);
-            });
-        });    
-    </script>
 </body>
 </html>
 

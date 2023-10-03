@@ -131,6 +131,14 @@ a {
 	margin-left: 3%;
 }
 
+#copyright {
+	font-size: 25px;
+	color: #f37d15;
+	text-align: center;
+	font-family: False;
+	margin: 33%;
+}
+
 /******** AFFICHAGE IMAGE EN GROS PLAN ********/
 
 /* Style superposition d'image agrandie */

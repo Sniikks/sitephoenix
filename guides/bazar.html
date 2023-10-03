@@ -153,33 +153,11 @@
             <div class="boxtextclassique" p> • acheter les trucs cosmetiques </p></div>
             <div class="boxtextclassique" p> • acheter de la drogue toutes les semaines </p></div>
         </div>
-        <div><p class="phoenix2023_1 "> Phoenix © 2023 </p></div>
-    </div>
+        <footer>
+            <p id="copyright"></p>
+        </footer>
 
-            <script>
-                // Fonction pour afficher l'image agrandie
-                function agrandirImage(imageSrc) {
-                    var overlay = document.createElement('div');
-                    overlay.className = 'overlay';
-                    overlay.onclick = function () {
-                        overlay.remove();
-                    };
-            
-                    var image = document.createElement('img');
-                    image.className = 'image-agrandie';
-                    image.src = imageSrc.replace('.png', '_large.png');
-            
-                    overlay.appendChild(image);
-                    document.body.appendChild(overlay);
-                }
-            
-                // Ajoutez un gestionnaire d'événements aux images avec la classe "photoequipe"
-                var images = document.querySelectorAll('.imagebazar1');
-                images.forEach(function (image) {
-                    image.addEventListener('click', function () {
-                        agrandirImage(image.src);
-                    });
-                });    
-            </script>
+    <script src="../script/javascript.js"></script>
+
 </body>
 </html>
