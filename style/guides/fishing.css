@@ -7,7 +7,7 @@ body {
 	display: grid;
 	place-content: center;
 	min-height: 100vh;
-	background-image: url('../img/background/fond.jpg');
+	background-image: url('../../img/background/fond.jpg');
 }
 
 /* BOUTON HOME */
@@ -39,13 +39,14 @@ a {
 	color: #f37d15;
 }
 
+
 /******** ********/
 
 /* Le conteneur en haut de la page */
-.containerhousing {
+.containerfishing {
     background-color: #000000;
     width: 1000px;
-    height: 2600px; /* Ajustez la hauteur selon vos besoins */
+    height: 2930px; /* Ajustez la hauteur selon vos besoins */
 	margin-top: 5%;
     position: absolute;
     top: 0;
@@ -55,9 +56,9 @@ a {
 }
 
 /* Barre orange à gauche */
-.separateurhousing {
+.separateurfishing {
     position: absolute;
-    height: 95%;
+    height: 96%;
 	border-left: 3px solid #f37d15;
 	margin-left: 1%;
 }
@@ -72,7 +73,7 @@ a {
 }
 
 /* Contenaire */
-.boxtexthousing1 {
+.boxtextfishing1 {
 	font-size: 25px;
 	color: white;
 	text-align: left;
@@ -88,7 +89,7 @@ a {
 	font-family: "Figtree", sans-serif;
 }
 
-.imagehousing1 {
+.imagefishing1 {
 	margin-right: auto;
 
 }
