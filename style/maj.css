@@ -83,3 +83,10 @@ a {
 	margin-left: 1%;
 }
 
+#copyright {
+	font-size: 25px;
+	color: #f37d15;
+	text-align: center;
+	font-family: False;
+	margin: 2%;
+}
