@@ -1,41 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const routes = [
-      {
-        url: 'index.html',
-        routes: [
-          { target: 'tofLink', url: 'https://www.toweroffantasy-global.com/download.html' },
-          { target: 'phoenixLink', url: './phoenix.html' },
-          { target: 'guidesLink', url: './guides.html' },
-          { target: 'discordLink', url: 'https://discord.gg/Sj586Vnzsb' },
-          { target: 'majLink', url: './maj.html' },
-        ],
-      },
-      {
-        url: 'guides.html',
-        routes: [
-          { target: 'routineLink', url: './guides/routine.html' },
-          { target: 'mapinteractifLink', url: './guides/mapinteractif.html' },
-          { target: 'cadeauxLink', url: './guides/cadeaux.html' },
-          { target: 'stuffLink', url: './guides/stuff.html' },
-          { target: 'housingLink', url: './guides/housing.html' },
-          { target: 'fishingLink', url: './guides/fishing.html' },
-          { target: 'bazarLink', url: './guides/bazar.html' },
-        ],
-      },
-    ];
-  
-    const currentUrl = window.location.pathname.split('/').pop();
-    const currentRoute = routes.find((route) => route.url === currentUrl);
-  
-    if (currentRoute) {
-      currentRoute.routes.forEach((route) => {
-        document.getElementById(route.target).addEventListener('click', function (event) {
-          event.preventDefault();
-          window.location.href = route.url;
-        });
-      });
-    }
-  });
     
 // Permet d'actualiser l'année du copyright.
 document.addEventListener('DOMContentLoaded', function () {
@@ -45,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
         copyrightElement.innerHTML = 'Phoenix &copy; ' + currentYear;
     }
 });
+
+// ******************** //
 
 // FONCTION POUR AGRANDIR L'IMAGE QUAND ON CLIQUE DESSUS
 function agrandirImage(imageSrc) {
@@ -117,5 +81,4 @@ var images = document.querySelectorAll('.imagestuff1');
     });
 });  
 
-// ******************** //
 
