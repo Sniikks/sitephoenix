@@ -1,60 +1,41 @@
-    // INDEX: Permet de cliquer sur les différentes pages.
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('tofLink').addEventListener('click', function(event) {
-        // Empêchez le comportement par défaut du lien (éviter le rechargement de la page)
-        event.preventDefault();
-        // Redirige vers Discord
-        window.location.href = 'https://www.toweroffantasy-global.com/download.html';
-    });
-    document.getElementById('phoenixLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = './phoenix.html';
-    });
-    document.getElementById('guidesLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = './guides.html';
-    });
-    document.getElementById('discordLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = 'https://discord.gg/Sj586Vnzsb';
-    });
-    document.getElementById('majLink').addEventListener('click', function(event) {
-        event.preventDefault();
-         window.location.href = './maj.html';
-    });
-});
-
-// GUIDES:
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('routineLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = './guides/routine.html';
-    });
-    document.getElementById('mapinteractifLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = './guides/mapinteractif.html';
-    });
-    document.getElementById('cadeauxLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = './guides/cadeaux.html';
-    });
-    document.getElementById('stuffLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = './guides/stuff.html';
-    });
-    document.getElementById('housingLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = './guides/housing.html';
-    });
-    document.getElementById('fishingLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = './guides/fishing.html';
-    });
-    document.getElementById('bazarLink').addEventListener('click', function(event) {
-        event.preventDefault();
-        window.location.href = './guides/bazar.html';
-    });
-});
+    const routes = [
+      {
+        url: 'index.html',
+        routes: [
+          { target: 'tofLink', url: 'https://www.toweroffantasy-global.com/download.html' },
+          { target: 'phoenixLink', url: './phoenix.html' },
+          { target: 'guidesLink', url: './guides.html' },
+          { target: 'discordLink', url: 'https://discord.gg/Sj586Vnzsb' },
+          { target: 'majLink', url: './maj.html' },
+        ],
+      },
+      {
+        url: 'guides.html',
+        routes: [
+          { target: 'routineLink', url: './guides/routine.html' },
+          { target: 'mapinteractifLink', url: './guides/mapinteractif.html' },
+          { target: 'cadeauxLink', url: './guides/cadeaux.html' },
+          { target: 'stuffLink', url: './guides/stuff.html' },
+          { target: 'housingLink', url: './guides/housing.html' },
+          { target: 'fishingLink', url: './guides/fishing.html' },
+          { target: 'bazarLink', url: './guides/bazar.html' },
+        ],
+      },
+    ];
+  
+    const currentUrl = window.location.pathname.split('/').pop();
+    const currentRoute = routes.find((route) => route.url === currentUrl);
+  
+    if (currentRoute) {
+      currentRoute.routes.forEach((route) => {
+        document.getElementById(route.target).addEventListener('click', function (event) {
+          event.preventDefault();
+          window.location.href = route.url;
+        });
+      });
+    }
+  });
     
 // Permet d'actualiser l'année du copyright.
 document.addEventListener('DOMContentLoaded', function () {
