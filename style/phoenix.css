@@ -88,12 +88,6 @@ a {
 	max-height: 142%; /* Pour que l'image s'adapte à la hauteur du conteneur */
 }
 
-.boxtextentente {
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center; /* Centre le texte horizontalement */
-}
-
 .boxtextentente1 {
 	font-size: 24px;
 	color:  #f37d15;
@@ -105,7 +99,7 @@ a {
 	font-size: 24px;
 	color:  #f37d15;
 	text-align: center; /* Centre le texte horizontalement */
-	margin-top: 50%;
+	margin-top: 53%;
 }
 
 .separateurcadeaux {
